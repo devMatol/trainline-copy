@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="cookies">
+
+    </div>
+
+    <header>
+        <div>
+            <div id="logo">
+                <img src="img/logoTrainline.png">
+            </div>
+
+            <ul>
+                <li>
+                    CRÉER UN COMPTE
+                </li>
+                <li>
+                    SE CONNECTER
+                </li>
+                <li>
+                    <a>AIDE</a>
+                </li>
+                <li>
+                    <img src="img/fr.png" width="30">
+                </li>
+                <li>
+                    <a>EUR</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="containerAccueil">
+        <h1>Réservez vos billets de trains. En France et en Europe.</h1>
+        <h2>Voyagez avec Trainline, leader indépendant de la vente de billets de train en Europe.</h2>
+        <div id="blocsVoyages">
+            <div id="leftBloc">
+                <p>
+                    Quel est votre trajet ?
+                </p>
+                <input class="inputTrajet" type="text" id="inputGareDepart" placeholder="Saisissez votre gare de départ...">
+                <input class="inputTrajet" type="text" id="inputGareArrivee" placeholder="Saisissez votre gare d'arrivée...">
+                <div id="divAller"><input class="inputTrajet" type="text" id="inputAller" placeholder="Aller"><span id="hourAller"></span></div>
+                <input class="inputTrajet" type="text" id="inputRetour" placeholder="Retour">
+                <div id="inputPassagers">
+                    <input type="button" id="passagers" value="1 Adulte (26-59)">
+                    <input type="button" id="passagersPlus">
+                </div>
+                <div id="searchDiv">
+                    <a href="">Utiliser un code de réduction</a>
+                    <input id="rechercher" type="button" value="RECHERCHER">
+                </div>
+
+            </div>
+            <div id="rightBloc">
+                <div id="rightBlocDefault">
+                    <h1>Les petits plus de Trainline</h1>
+                    <ul>
+                        <li>
+                            <div>
+                            </div>
+                            <div>
+                                <h3>
+                                    Vos billets au meilleur prix
+                                </h3>
+                                <p>Achetez vos billets aux prix fixés par les transporteurs, sans frais supplémentaires.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div>
+                            </div>
+                            <div>
+                                <h3>
+                                    Cartes de réduction
+                                </h3>
+                                <p>Elles sont toutes acceptées, comme vos cartes de fidélité.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div>
+                            </div>
+                            <div>
+                                <h3>
+                                    Payez en toute sécurité
+                                </h3>
+                                <p>CB, Amex, Paypal, Chèques-Vacances ANCV: c'est vous qui voyez.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="hr">
+                        <hr>
+                        <span>
+                     DISTRIBUTEUR AGRÉÉ
+                        </span>
+                    </div>
+                    <div id="distributeurs">
+                        <img src="img/sncf.svg">
+                        <img src="img/ouigo.svg">
+                        <img src="img/thalys.svg">
+                        <img src="img/eurostar.png">
+                    </div>
+
+                </div>
+                <div id="rightBlocGareDepart">
+                    <p>Choisissez une gare de départ</p>
+                    <ul id="listLocationDepart">
+                        <li class="inputGareDepart" id="Paris"><a>Paris</a></li>
+                        <li class="inputGareDepart" id="London"><a>London (Londres)</a></li>
+                        <li class="inputGareDepart" id="Lyon"><a>Lyon</a></li>
+                        <li class="inputGareDepart" id="Lille"><a>Lille</a></li>
+                        <li class="inputGareDepart" id="Bordeaux"><a>Bordeaux</a></li>
+                        <li class="inputGareDepart" id="Strasbourg"><a>Strasbourg</a></li>
+                        <li class="inputGareDepart" id="Marseille"><a>Marseille</a></li>
+                    </ul>
+
+                </div>
+                <div id="rightBlocGareArrivee">
+                    <p>Choisissez une gare d'arrivée</p>
+                    <ul id="listLocationArrivee">
+                        <li class="inputGareArrivee" id="Paris"><a>Paris</a></li>
+                        <li class="inputGareArrivee" id="London"><a>London (Londres)</a></li>
+                        <li class="inputGareArrivee" id="Lyon"><a>Lyon</a></li>
+                        <li class="inputGareArrivee" id="Lille"><a>Lille</a></li>
+                        <li class="inputGareArrivee" id="Bordeaux"><a>Bordeaux</a></li>
+                        <li class="inputGareArrivee" id="Strasbourg"><a>Strasbourg</a></li>
+                        <li class="inputGareArrivee" id="Marseille"><a>Marseille</a></li>
+                    </ul>
+                </div>
+                <div id="rightBlocAller">
+                    <p>Choisissez une date de départ</p>
+                    <div class="calendar">
+                        <div class="header">
+                            <p class="leftPointer">&laquo;</p>
+                            <p class="monthName"></p>
+                            <p class="rightPointer">&raquo;</p>
+                        </div>
+                        <ul class="group">
+                            <li>Lun.</li>
+                            <li>Mar.</li>
+                            <li>Mer.</li>
+                            <li>Jeu.</li>
+                            <li>Ven.</li>
+                            <li>Sam.</li>
+                            <li>Dim.</li>
+                        </ul>
+                        <div id="hoursCalendar">
+                            <ul id="listHoursCalendar">
+                                <li class="liHours">6h</li>
+                                <li class="liHours">8h</li>
+                                <li class="liHours">10h</li>
+                                <li class="liHours">12h</li>
+                                <li class="liHours">14h</li>
+                                <li class="liHours">16h</li>
+                                <li class="liHours">18h</li>
+                                <li class="liHours">20h</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
